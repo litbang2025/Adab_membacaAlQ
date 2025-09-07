@@ -262,7 +262,7 @@ with st.sidebar:
 # -------------------------
 # Observe Page
 # -------------------------
-if page == "Observe":
+if page == "🔎 Observe":
     st.header("🔎 Observasi Adab — Isi Form")
     if 'last_kelas' not in st.session_state:
         st.session_state['last_kelas'] = kelas
@@ -333,7 +333,7 @@ if page == "Observe":
 # -------------------------
 # Dashboard Page
 # -------------------------
-elif page == "Dashboard":
+elif page == "📊 Dashboard":
     st.header("📊 Dashboard Analitik — Ringkasan Kelas")
     df = fetch_all()
     if df.empty:
@@ -433,7 +433,7 @@ elif page == "Dashboard":
 # -------------------------
 # Student Lab Page
 # -------------------------
-elif page == "Student Lab":
+elif page == "🧪 Student Lab":
     st.header("🧪 Student Lab — Eksplorasi Sederhana")
     team = st.text_input("Nama Tim", value="Tim Detektif 1")
     question = st.selectbox("Pilih Pertanyaan Penelitian", options=[
@@ -456,7 +456,7 @@ elif page == "Student Lab":
 # -------------------------
 # Reports Page
 # -------------------------
-elif page == "Reports":
+elif page == "📁 Reports":
     st.header("📁 Generate Reports & Export")
     df = fetch_all()
     if df.empty:
@@ -489,7 +489,7 @@ elif page == "Reports":
 # -------------------------
 # Admin Page
 # -------------------------
-elif page == "Admin":
+elif page == "⚙️ Admin":
     st.header("🔧 Admin — Manajemen Data & Verifikasi")
     df = fetch_all()
     if df.empty:
@@ -517,7 +517,7 @@ elif page == "Admin":
 # -------------------------
 # Panduan Page
 # -------------------------
-elif page == "Panduan":
+elif page == "📚 Panduan":
     st.header("📚 Panduan Singkat & Etika")
     st.markdown("Referensi adab (ringkasan):")
     for key,label in ADAB_LIST:
