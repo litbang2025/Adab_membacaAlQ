@@ -234,7 +234,7 @@ with st.sidebar:
     # Menu Navigasi dengan ikon
     page = st.radio(
         "📌 Menu",
-        ["🔎 Observe", "📊 Dashboard", "🧪 Student Lab", "📁 Reports", "⚙️ Admin", "📚 Panduan"],
+        ["🔎 Observe", "📊 Dashboard", "🧪 Student Lab", "📁 Reports", "📚 Panduan"],
         index=1
     )
 
@@ -533,3 +533,4 @@ elif page == "📚 Panduan":
 # Footer caption in sidebar
 st.sidebar.markdown("---")
 st.sidebar.caption("Aplikasi mengacu pada materi 'Adab Membaca Al-Qur'an' (hal.28–36).")
+
